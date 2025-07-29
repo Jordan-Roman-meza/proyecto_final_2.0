@@ -1,0 +1,565 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Orbitron' ,Arial, sans-serif;
+}
+
+.superior {
+    background-color: #000;
+    width: 100%;
+    padding: 0px 0;
+}
+
+.cabeza {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 33px;
+    padding: 5px;
+    padding-right: 20px;
+}
+
+.buscar {
+    max-width: 100%;
+    width: 100%;
+    height: 40px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.buscar:hover {
+    border-color: blue;
+}
+
+.lupa {
+    height: 34px;
+    width: 35px;
+    object-fit: contain;
+    cursor: pointer;
+    background-color: blue;
+    border-radius: 0 5px 5px 0;
+    padding-bottom: 1px;
+    padding: 0;
+}
+
+.boton-usuario {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.boton-usuario:hover {
+    background-color: #222;
+}
+
+.boton-usuario .usuario {
+    margin-right: 8px;
+    width: 27px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.contenedor-busqueda {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 600px;
+}
+
+.cuadro-lupa {
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.cuadro-lupa:hover {
+    background-color: darkblue;
+}
+
+.categorias {
+    padding: 10px 0;
+    border-top: 1px solid #333;
+}
+
+.categorias-partes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+
+.categorias-partes a {
+    background-color: #222;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.categorias-partes a:hover {
+    background-color: #444;
+}
+
+.categorias{
+    background-color: #000;
+    border: none;
+    padding: 0;
+}
+
+.contenedor-categorias {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.inicio {
+    background-image: url("img/fondo_dt_01.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #141c39;
+    width: 100%;
+    height: 100vh; 
+    padding-top: 60px;
+}
+
+
+.mejores-juegos{
+    display: flex;
+    gap: 31px;
+    justify-content: center;
+    padding: 20px 20px;
+    flex-wrap: wrap;
+}
+
+
+.nombre-juego {
+    font-size: 20px;
+    color: #000;
+    margin: 10px 0 5px;
+    text-align: center;
+}
+
+.desc-juego {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 20px;
+    color: #ddd;
+    line-height: 1.4;
+}
+
+.juegos{
+    display: flex;
+    width: 280px;
+    height: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.juego {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    background-image: url("img/fondo-blanco.jpg");
+    border-radius: 10px;
+    padding-bottom: 27vh;
+    padding-right: 30px;
+}
+
+.juegos:hover {
+    transform: scale(1.05);
+}
+
+.juego span {
+    position: absolute;
+    top: 58%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 1;
+    white-space: nowrap;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text1{
+    padding: 8px 26px;
+}
+
+.text2{
+    padding: 8px 23px;
+}
+
+.text3{
+    padding: 8px 16px;
+}
+
+.title-juegos{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.title-juegos h2{
+    width: 200px;
+    height: 50px;
+    align-items: flex-end;
+    color: white;
+    margin: 0;
+    display: flex;
+    inline-size: auto;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.ofertas{
+    background-image: url(img/fondo_dt_01.png);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 95vh;
+}
+
+.titulo-juego {
+    font-size: 20px;
+    margin: 10px 10px 5px;
+    color: #222;
+    font-weight: bold;
+}
+
+.descripcion-juego {
+    font-size: 15px;
+    color: #555;
+    text-align: center;
+    padding: 0 10px;
+    line-height: 1.5;;
+}
+
+.info-extra {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-size: 13px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.genero,
+.plataforma {
+    background-color: #f0f0f0;
+    padding: 4px 6px;
+    border-radius: 4px;
+}
+
+
+.ofertas-2 {
+    padding: 40px 0 10px;
+    text-align: center;
+}
+
+.ofertas-2 h1 {
+    color: black;
+    font-size: 2em;
+    margin: 0;
+}
+
+
+.caja {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 20px;
+}
+
+.caja div {
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+.caja img {
+    width: 100%;
+    height: 50vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.caja img:hover {
+    transform: scale(1.05);
+}
+
+.oferta-juego{
+    background-image: url(img/fondo-blanco.jpg);
+    border-radius: 10px;
+    padding-bottom: 0vh;
+}
+
+.precio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.precio .original {
+    color: #999;
+    text-decoration: line-through;
+}
+
+.precio .oferta {
+    color: #e60000;
+    background-color: #ffecec;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+/*ofertas de tiempo limitado*/
+
+.ofertas-tiempo-cuerpo{
+    background-image: url(img/fondo_dt_01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 85vh;
+    padding-bottom: 50px;
+}
+
+.caja-padre{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 40px 20px;
+}
+
+.caja-padre img{
+    width: 100%;
+    height: 50vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.caja-padre img:hover {
+    transform: scale(1.05);
+}
+
+.caja-padre div{
+    flex: 1 1 250px;
+    max-width: 300px;
+}
+
+.ofertas-tiempo {
+    background-color: white;
+    padding: 40px 0 10px;
+    text-align: center;
+}
+
+.ofertas-tiempo h1 {
+    color: #000;
+    font-size: 2em;
+    margin: 0;
+}
+
+.juego-oferta-tiempo {
+    border-radius: 8px;
+}
+
+.juego-oferta-tiempo-a:hover {
+    transform: scale(1.05);
+}
+
+.juego-oferta-tiempo{
+    background-image: url(img/fondo-blanco.jpg);
+    border-radius: 10px;
+    padding-bottom: 0vh;
+}
+
+.fecha-limite {
+    text-align: center;
+    font-size: 14px;
+    color: #b30000;
+    margin: 10px;
+    font-weight: bold;
+    background-color: #fff5f5;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid #ffcccc;
+}
+
+/*Footer*/
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .icons {
+    margin-bottom: 10px;
+}
+
+.footer .icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #fff;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.footer .icons i:hover {
+    color: #007bff;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0;
+}
+
+.mapa-footer {
+    max-width: 1000px;
+    text-align: center;
+}
+
+.mapa-footer h3 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.volver-arriba-container {
+    text-align: right;
+    background-color: #000;
+    border-radius: 10px;
+}
+
+.volver-arriba-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+
+.volver-arriba {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.volver-arriba:hover {
+    background-color: #0056b3;
+}
+
+.contactos-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media(min-width: 10px ) and (max-width: 1500px){
+    .mejores-juegos{
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .mejores-juegos::-webkit-scrollbar {
+        height: 8px;
+    }
+
+    .mejores-juegos::-webkit-scrollbar-thumb {
+        background-color: #444;
+        border-radius: 4px;
+    }
+
+    .mejores-juegos::-webkit-scrollbar-track {
+        background: #222;
+    }
+
+    .ofertas{
+        display: flex;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        scroll-snap-type: x mandatory;
+    }
+
+    .ofertas::-webkit-scrollbar{
+        height: 0;
+        width: 0;
+    }
+
+
+
+    .ofertas-tiempo-cuerpo{
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .ofertas-tiempo-cuerpo::-webkit-scrollbar{
+        width: 0;
+    }
+
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

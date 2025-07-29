@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Juegos Favoritos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo2ga.png">
+    <script src="https://kit.fontawesome.com/64757b6fae.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="superior">
+        <div class="cabeza">
+            <a href="index.html">
+                <img src="img/img1_logo.svg" class="logo" alt="Logo" id="arriba">
+            </a>
+
+            <form role="search" class="contenedor-busqueda" action="busqueda.html" method="get">
+                <input type="search" id="busqueda" class="buscar" placeholder="¿Qué estás buscando?" name="busca">
+                <button type="submit" class="cuadro-lupa" aria-label="Buscar">
+                    <img src="img/lupa.png" class="lupa" alt="Buscar">
+                </button>
+            </form>
+
+            <a href="inicio_session.html" class="boton-usuario">
+                <img src="img/agregar_usuario.png" alt="Usuario" class="usuario">
+                <span>Iniciar sesión</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="categorias">
+        <div class="contenedor-categorias">
+            <div class="categorias-partes">
+                <a href="#mejoresjuegos">Mejores Juegos</a>
+                <a href="#ofertas">Ofertas</a>
+                <a href="#ofertas-tiempo">Ofertas de tiempo limitado</a>
+                <a href="#nosotros">Nosotros</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="inicio" id="mejoresjuegos">
+        <div class="title-juegos">
+            <h2>Los Juegos Más Jugados</h2>
+        </div>
+        <div class="mejores-juegos">
+            <div class="juego">
+                <span class="text1">Más Jugado</span>
+                <img src="img/Fortnite.jpg" class="juegos" alt="Fortnite">
+                <h3 class="nombre-juego">Fortnite</h3>
+                <p class="descripcion-juego">
+                    Un juego de batalla real donde los jugadores luchan por sobrevivir en un mundo lleno de acción y construcción.
+                </p>
+            </div>
+
+            <div class="juego">
+                <span class="text2">Más Vendido</span>
+                <img src="img/Minecraft.jpg" class="juegos" alt="Minecraft">
+                <h3 class="nombre-juego">Minecraft</h3>
+                <p class="descripcion-juego">
+                    Un juego de construcción y aventura donde los jugadores pueden explorar, construir y sobrevivir en un mundo generado por bloques.
+                </p>
+            </div>
+
+            <div class="juego">
+                <span class="text3">Juego Popular</span>
+                <img src="img/lol.webp" class="juegos" alt="League of Legends">
+                <h3 class="nombre-juego">League of Legends</h3>
+                <p class="descripcion-juego">
+                    Un juego de estrategia en tiempo real donde los jugadores controlan campeones con habilidades únicas y luchan en equipos para destruir la base del enemigo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="ofertas-2">
+        <h1 id="ofertas">Ofertas</h1>
+    </div>
+
+    <section class="ofertas">
+        <div class="caja">
+            <div class="oferta-juego">
+                <img src="img/GTA_5.webp" alt="GTA V">
+                <h3 class="titulo-juego">Grand Theft Auto V</h3>
+                <p class="descripcion-juego">
+                    Un juego de acción y aventura en un mundo abierto, donde los jugadores pueden explorar la ciudad, realizar misiones y participar en actividades criminales.
+                </p>
+                <div class="info-extra">
+                    <span class="genero">Accion / Aventura</span>
+                    <span class="plataforma">PC / PS4 / Xbox</span>
+                </div>
+                <div class="precio">
+                    <span class="original">$59.99</span>
+                    <span class="oferta">$29.99</span>
+                </div>
+            </div>
+
+            <div class="oferta-juego">
+                <img src="img/Black Myth Wukong HD.jpg" alt="Black Myth Wukong">
+                <h3 class="titulo-juego">Black Myth: Wukong</h3>
+                <p class="descripcion-juego">
+                    Un juego de acción basado en la mitología china con gráficos impresionantes y combate desafiante.
+                </p>
+                <div class="info-extra">
+                    <span class="genero">Accion / Aventura</span>
+                    <span class="plataforma">PC / PS5 / Xbox</span>
+                </div>
+                <div class="precio">
+                    <span class="original">$59.99</span>
+                    <span class="oferta">$39.99</span>
+                </div>
+            </div>
+
+            <div class="oferta-juego">
+                <img src="img/red_dead_3.jpg" alt="Red dead Redemption 2">
+                <h3 class="titulo-juego">Red Dead Redemption 2</h3>
+                <p class="descripcion-juego">
+                    Un épico juego de acción y aventura en un mundo abierto del Lejano Oeste, con una narrativa profunda y personajes memorables.
+                </p>
+                <div class="info-extra">
+                    <span class="genero">Accion / Aventura</span>
+                    <span class="plataforma">PC / PS4 / Xbox</span>
+                </div>
+                <div class="precio">
+                    <span class="original">$49.99</span>
+                    <span class="oferta">$19.99</span>
+                </div>
+            </div>
+
+            <div class="oferta-juego">
+                <img src="img/warhammer-40000-space-marine.jpg" alt="Warhammer 4000 Space Marine">
+                <h3 class="titulo-juego">Warhammer 40000: Space Marine</h3>
+                <p class="descripcion-juego">
+                    Un juego de acción en tercera persona ambientado en el universo de Warhammer 40000, donde los jugadores asumen el papel de un poderoso marine espacial.
+                </p>
+                <div class="info-extra">
+                    <span class="genero">Accion / Shooter</span>
+                    <span class="plataforma">PC / PS4 / Xbox</span>
+                </div>
+                <div class="precio">
+                    <span class="original">$39.99</span>
+                    <span class="oferta">$14.99</span>
+                </div>
+            </div>
+
+            <div class="oferta-juego">
+                <img src="img/tekken_8.jpg" alt="Tekken 8">
+                <h3 class="titulo-juego">Tekken 8</h3>
+                <p class="descripcion-juego">
+                    La última entrega de la icónica saga de juegos de lucha, con nuevos personajes y mecánicas de combate mejoradas.
+                </p>
+                <div class="info-extra">
+                    <span class="genero">Lucha / Competitivo</span>
+                    <span class="plataforma">PC / PS5 / Xbox</span>
+                </div>
+                <div class="precio">
+                    <span class="original">$59.99</span>
+                    <span class="oferta">$29.99</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ofertas-tiempo">
+        <h1 id="ofertas-tiempo">Ofertas De Tiempo limitado</h1>
+    </div>
+
+    <section class="ofertas-tiempo-cuerpo">
+        <div class="caja-padre">
+            <div class="juego-oferta-tiempo">
+                <img src="img/Left_4_Dead_2.webp" alt="Left 4 Dead 2">
+                <h3 class="titulo-juego">Left 4 Dead 2</h3>
+                <p class="descripcion-juego">
+                    Un juego cooperativo de disparos en primera persona donde los jugadores luchan contra hordas de zombis en un mundo postapocalíptico.
+                </p>
+                <div class="info-extra">
+                    <span class="genero">Accion / Shooter</span>
+                    <span class="plataforma">PC / PS4 / Xbox</span>
+                </div>
+                <div class="precio">
+                    <span class="original">$29.99</span>
+                    <span class="oferta">$9.99</span>
+                </div>
+                <div class="fecha-limite">
+                    Oferta válida hasta: <strong>31 de julio de 2025</strong>
+                </div>
+            </div>
+
+            <div class="juego-oferta-tiempo">
+                <img src="img/resident_evil_4_remake.webp" alt="Resident Evil 4">
+                <h3 class="titulo-juego">Resident Evil 4 Remake</h3>
+                <p class="descripcion-juego">
+                    Un remake del clásico juego de terror y supervivencia, con gráficos mejorados y una jugabilidad renovada.
+                </p>
+                <div class="info-extra">
+                    <span class="genero">Terror / Supervivencia</span>
+                    <span class="plataforma">PC / PS5 / Xbox</span>
+                </div>
+                <div class="precio">
+                    <span class="original">$59.99</span>
+                    <span class="oferta">$29.99</span>
+                </div>
+                <div class="fecha-limite">
+                    Oferta válida hasta: <strong>31 de julio de 2025</strong>
+                </div>
+            </div>
+
+            <div class="juego-oferta-tiempo">
+                <img src="img/the-last-of-us.jpg" alt="The Last Of Us">
+                <h3 class="titulo-juego">The Last Of Us Part I</h3>
+                <p class="descripcion-juego">
+                    Una historia emocional en un mundo postapocalíptico con una jugabilidad impresionante.
+                </p>
+                <div class="info-extra">
+                    <span class="genero">Aventura / supervivencia</span>
+                    <span class="plataforma">PC / PS5</span>
+                </div>
+                <div class="precio">
+                    <span class="original">$69.99</span>
+                    <span class="oferta">$34.99</span>
+                </div>
+                <div class="fecha-limite">
+                    Oferta válida hasta: <strong>31 de julio de 2025</strong>
+                </div>
+            </div>
+
+            <div class="juego-oferta-tiempo">
+                <img src="img/pvz-fdnegro-GW2.png" alt="Plantas vs Zombies GW2">
+                <h3 class="titulo-juego">Plantas vs Zombies: Garden Warfare 2</h3>
+                <p class="descripcion-juego">
+                    Divertido shooter con personajes locos y batallas multijugador llenas de acción.
+                </p>
+                <div class="info-extra">
+                    <span class="genero">Shooter / Multijugador</span>
+                    <span class="plataforma">PC / PS4 / Xbox</span>
+                </div>
+                <div class="precio">
+                    <span class="original">$39.99</span>
+                    <span class="oferta">$14.99</span>
+                </div>
+                <div class="fecha-limite">
+                    Oferta válida hasta: <strong>31 de julio de 2025</strong>
+                </div>
+            </div>
+
+            <div class="juego-oferta-tiempo">
+                <img src="img/Half-Life_2_cover.webp" alt="Half-Life 2">
+                <h3 class="titulo-juego">Half-Life 2</h3>
+                <p class="descripcion-juego">
+                    Un clásico de los videojuegos, con una narrativa envolvente y una jugabilidad innovadora.
+                </p>
+                <div class="info-extra">
+                    <span class="genero">Aventura / Shooter</span>
+                    <span class="plataforma">PC / PS4 / Xbox</span>
+                </div>
+                <div class="precio">
+                    <span class="original">$29.99</span>
+                    <span class="oferta">$9.99</span>
+                </div>
+                <div class="fecha-limite">
+                    Oferta válida hasta: <strong>31 de julio de 2025</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-container">
+        <div class="footer">
+            <div class="mapa-footer">
+                <h3 id="nosotros">¿Donde nos encontramos?</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2495686.848776111!2d2.6806641!3d52.3487632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c6096692a9a78d%3A0x6dc857d1055a64c1!2sG2A!5e0!3m2!1ses-419!2spe!4v1752849484655!5m2!1ses-419!2spe"
+                    width="400" 
+                    height="450" 
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    display="flex" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="contactos-footer">
+            <h3>Contactanos</h3>
+                <div class="icons">
+                    <a href="https://www.facebook.com/G2Acom"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <p class="footer-text">
+                    © 2025 Tus Juegos Favoritos. Todos los derechos reservados. 
+                </p>
+            </div>
+        </div>
+        <div  class="volver-arriba-container">
+            <a href="#arriba" class="volver-arriba">Volver arriba</a>
+        </div>
+    </footer>
+</body>
+</html>
